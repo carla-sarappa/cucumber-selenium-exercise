@@ -5,4 +5,9 @@ sudo: false
 jdk:
   - oraclejdk8
 
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - echo "MAVEN_OPTS='-Dwebdriver.gecko.driver=./drivers/geckodriver ' "
+
 script: mvn clean verify -Dwebdriver.gecko.driver="./drivers/geckodriver"
