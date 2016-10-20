@@ -10,4 +10,4 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - echo "MAVEN_OPTS='-Dwebdriver.gecko.driver=./drivers/geckodriver ' "
 
-script: mvn clean verify -Dwebdriver.gecko.driver="./drivers/geckodriver"
+script: mvn clean verify -Dwebdriver.gecko.driver=./drivers/geckodriver
