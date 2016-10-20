@@ -1,3 +1,3 @@
 language: groovy
-
-mvn clean verify -ea -Dwebdriver.gecko.driver="./drivers/geckodriver"
+sudo: false
+script: mvn clean verify -ea -Dwebdriver.gecko.driver="./drivers/geckodriver"

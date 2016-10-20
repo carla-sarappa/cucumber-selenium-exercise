@@ -1,6 +1,5 @@
 package cucumber.environment
 
-import cucumber.eventlistener.MyWebDriverEventListener
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.firefox.FirefoxDriver
@@ -23,7 +22,7 @@ class TestEnvironment {
 
     @SuppressWarnings("GrMethodMayBeStatic")
     private WebDriver loadSelenium() {
-        driver = new EventFiringWebDriver(new FirefoxDriver()).register(new MyWebDriverEventListener())
+        driver = new EventFiringWebDriver(new FirefoxDriver())
         return driver
     }
 }
