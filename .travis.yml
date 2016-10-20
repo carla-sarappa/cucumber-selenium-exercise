@@ -3,6 +3,6 @@ language: groovy
 sudo: false
 
 jdk:
-  - openjdk8
+  - oraclejdk8
 
 script: mvn clean verify -ea -Dwebdriver.gecko.driver="./drivers/geckodriver"
